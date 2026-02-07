@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>merubah backround</title>
+    <link rel="stylesheet" href="JAWAAA.css">
+</head>
+<body>
+  <h1>Mulyono Lovers</h1> 
+    <button onclick="changeBackgroundColor();">ubah warna Background</button>
+
+
+ <script>
+    function salam (nama){
+        document.write("selamat datang, " + nama + "!<br/>");
+    }
+
+    function changeBackgroundColor () {
+        let color = ["red", "blue", "yellow", "green", "blue", "pink", "gray"];
+        let index = Math.floor(Math.random() * color.length);
+        console.log(index);
+        console.log(color[index]);
+        document.body.style.backgroundColor = color[index];
+    }
+    
+    </script>
+</body>
+</html>
